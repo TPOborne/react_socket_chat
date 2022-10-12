@@ -1,0 +1,39 @@
+.messageWrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.messageWrapper:last-of-type > .message {
+  margin: 0;
+}
+
+.messageWrapper.me {
+  justify-content: flex-end;
+}
+
+.messageWrapper.me > .message > span {
+  text-align: right;
+  display: none;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  width: max-content;
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 80%;
+}
+
+.message.me {
+  background: orange;
+}
+
+.message > span {
+  color: orange;
+  font-size: 12px;
+}

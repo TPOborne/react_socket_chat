@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/Roboto-Regular.ttf');
+}
+
+* {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.table {
+  width: 600px;
+  height: 600px;
+  background: rgb(32, 22, 1);
+  margin: 100px auto;
+  transform: perspective(500px) rotateX(45deg);
+}
